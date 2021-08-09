@@ -1,0 +1,173 @@
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  /* ヘッダー全体 */
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  position: fixed;/* ヘッダー固定 */
+  top: 0px;
+  left: 0px;
+  /* 中のコンテンツ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  color:black;
+  
+}
+.header-ttl {
+  font-size: 24px;
+  width: 80px;
+}
+.header-nav-list {
+  display: flex;
+  font-weight: bold;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+body{
+  padding-top: 90px;
+}
+
+
+img{ 
+  width: 100vw;
+  height: 200px;
+  position: relative;
+  
+} 
+
+.head-contents{
+  position: absolute;
+  padding: 0 0;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  top: 22%;
+  left: 45%;
+}
+
+
+.blog-all{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.blog-card{
+  width: 400px;
+  height: 300px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.blog-img{
+  width: 400px;
+  height: 200px;
+}
+ 
+.blog-date{
+  color: #000;
+
+}
+
+.blog-ttl{
+  text-align:left;
+  color: black;
+}
+
+
+
+
+
+
+.contact-all{
+  width: 100%;
+  height: 300px;
+  background-color: rgb(240, 240, 240);
+  margin-top: 70px;
+}
+
+.contact-inner{
+  text-align: center;
+}
+
+.contact-ttl{
+  color: black;
+  padding-top: 50px;
+}
+
+.contact-sentents{
+   color: black;
+}
+
+.btn-contact{
+   display: block;
+  width: 300px;
+  padding: 15px;
+  text-align:center;
+  text-decoration: none;
+  color:#fff;
+  border: 1px solid rgb(150, 15, 15);
+  background-color: rgb(150, 15, 15);
+  font-weight: bolder;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.btn-contact:hover{
+background: rgba(253, 205, 205, 0.993);
+color: #fff; 
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(109, 107, 107);
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.footer-ttl {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer-nav-list {
+  display: flex;
+  font-weight: solid;
+  width: 100%;
+  justify-content: center;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.footer-nav-item:not(:last-child) {
+  margin-right:20px;
+}
+.copyright{
+  font-size: 12px;
+}
+
+.footer-nav-item:hover{
+  color:black;
+
+}
