@@ -7,7 +7,7 @@ ul {
 }
 .header {
   /* ヘッダー全体 */
-  width: 100%;
+  width: 100vw;
   height: 50px;
   box-sizing: border-box;
   position: fixed;/* ヘッダー固定 */
@@ -71,17 +71,23 @@ a{
   left: 20px;
   top: 20px;
 }
-@media (max-width: 768px){
-  nav{
+/* レスポンシブの際ヘッダー部分を隠し、ハンバーガーメニューのみ表示 */
+@media screen and (max-width: 768px){
+  .header-nav{
     display:none;
+  }
+  .menu{
+    display: block;
+  }
+}
+/* PCサイズの際ハンバーガーメニューを表示しない */
+@media screen and (min-width: 769px){
+  .menu{
+    display: none;
   }
 }
 
-@media (min-width: 768px){
-  .menu{
-    display:block;
-  }
-}
+
 
 .menu-line-top,
 .menu-line-middle,
@@ -94,8 +100,10 @@ a{
   transition: 0.5s;
   z-index: 2;
   /* right: -320px; */
-  visibility: hidden;
+  /* visibility: hidden; */
+  /* 試したけど、不要なもの */
 }
+
 .menu-line-top {
   top: 0;
 }
@@ -123,18 +131,13 @@ a{
 
 
 /* ヘッダー画像 */
-.head{
-  width: 500px;
+img{
+  width: 100%;
   height: 15%;
   position: relative;
 
 }
 
-@media screen and (max-width: 768px){
-  .head{width: 100%;
-  height: 15%;
-  }
-}
 
 .head-contents{
   position: absolute;
@@ -196,7 +199,7 @@ a{
 }
 
 .item{
-  width: 700px;
+  width: 600px;
   height: 600px;
   margin-left: 10px;
   padding-right: 10px;
@@ -325,8 +328,8 @@ a{
 }
 
 .blog-card{
-  width: 450px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   
 
 }
@@ -503,3 +506,4 @@ color: #fff;
 .footer-nav-a{
   color: #fff;
 }
+
