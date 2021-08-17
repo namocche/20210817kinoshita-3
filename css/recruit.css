@@ -21,7 +21,7 @@ a {
   padding: 0 30px;
   background-color: #fff;
   color:black;
-  
+  z-index: 1;
 }
 .header-ttl {
   font-size: 24px;
@@ -56,6 +56,47 @@ body{
   justify-content: center;
   top: 22%;
   left: 45%;
+}
+
+
+.new-recruit, .career-recruit{
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+.new-recruit-ttl, .career-recruit-ttl{
+  border-bottom: 1px solid #222;
+
+}
+
+.new-recruit-name, .career-recruit-name{
+  border-right: 1px solid #222;
+  border-left: 1px solid #222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  background-color: rgb(228, 228, 228);
+  text-align: center;
+
+}
+
+
+.new-recruit-data, .career-recruit-data{
+  text-align: left;
+  font-size: 16px;
+  padding: 15px 15px 15px 15px;
+  border-right: 1px solid #222;
+  border-left: 1px solid #222;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  
 }
 
 
